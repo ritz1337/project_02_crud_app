@@ -3,11 +3,14 @@ var path = require('path');
 var logger = require('morgan');
 var bodyParser = require('body-parser');
 var hbs = require('express-handlebars');
+var favicon = require('serve-favicon');
 
 //require routes
 var routes = require('./routes/index');
 
 var app = express();
+
+app.use(favicon(__dirname + '/public/cloud.ico'));
 
 //view engine set-up
 app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'main', layoutsDir: __dirname + '/views/layouts/'}));

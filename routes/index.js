@@ -27,4 +27,13 @@ router.get('/insert', function(req, res, next) {
   res.redirect('/');
 });
 
+router.get('/politics', function(req, res) {
+  res.render('politics', {title: 'POLITICS PAGE'})
+})
+
+
+// router.get('/politics.html', function(req, res) {
+//   res.redirect('/politics.html');
+// })
+
 module.exports = router;
