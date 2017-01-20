@@ -13,9 +13,17 @@ var app = express();
 app.use(favicon(__dirname + '/public/cloud.ico'));
 
 //view engine set-up
-app.engine('hbs', hbs({extname: 'hbs', defaultLayout: 'main', layoutsDir: __dirname + '/views/layouts/'}));
+app.engine('hbs', hbs({
+  extname: 'hbs',
+  defaultLayout: 'main',
+  layoutsDir: __dirname + '/views/layouts/',
+  partialsDir: __dirname + '/views/partials/'
+}));
+
 // server .hbs templates from views with res.render
 app.set('views', path.join(__dirname, 'views'));
+
+
 // Use Handlebars syntax {{ }}
 app.set('view engine', 'hbs');
 

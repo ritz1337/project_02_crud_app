@@ -1,4 +1,44 @@
+.opinion-controls {
+  float: right;
+}
+
+.opinion-edit,
+.opinion-delete {
+  display: inline-block;
+}
+
+.upd {
+  top: -5px;
+}
 .homeheader {
   text-align: center;
 }
 
+.removebutton {
+  cursor: pointer;
+  color: red;
+}
+
+.updatebutton {
+  cursor: pointer;
+  color: green;
+}
+
+.hiddenid {
+  display: none;
+}
+
+.username {
+  position: absolute;
+  right: 15px;
+  bottom: -5px;
+  color: white;
+}
+
+.userplace {
+  color: #49ccff;
+}
+
+.toc-wrapper {
+  width: 200px;
+}
