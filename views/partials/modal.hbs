@@ -19,6 +19,21 @@
 </div> --}}
 
  <!-- Modal Trigger -->
+{{!--             <a class="waves-effect waves-light upd" href="#modal{{_id}}">
+              <i class="material-icons">create</i>
+            </a>
+
+            <!-- Modal Structure -->
+            <div id="modal{{_id}}" class="modal">
+              <div class="modal-content">
+                <h4>Update Opinion</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div> --}}
+
             <a class="waves-effect waves-light upd" href="#modal{{_id}}">
               <i class="material-icons">create</i>
             </a>
@@ -26,10 +41,31 @@
             <!-- Modal Structure -->
             <div id="modal{{_id}}" class="modal">
               <div class="modal-content">
-                <h4>Modal Header</h4>
-                <p>A bunch of text</p>
-              </div>
-              <div class="modal-footer">
-                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+                <h4>Update Opinion</h4>
+                <form action="/opinion/politics/update" method="post">
+                  <div class="input-field">
+                    <input type="text" id="updatetitle" name="updatetitle" class="validate" required>
+                    <label for="updatetitle">Title</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" id="updatebody" name="updatebody" class="validate" required>
+                    <label for="updatebody">Body</label>
+                  </div>
+                  <div class="input-field hiddenid">
+                    <input type="hidden" id="id" name="id" value={{_id}}>
+                  </div>
+                  <button type="submit">UPDATE</button>
+                </form>
               </div>
             </div>
+
+
+
+
+
+
+
+
+
+
+

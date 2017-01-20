@@ -98,7 +98,35 @@ router.post('/opinion/:objectid/delete', function(req, res) {
 })
 
 // update an opinion
+router.post('/opinion/politics/update', function(req, res) {
+  var objectId = {
+    title: req.body.updatetitle,
+    body: req.body.updatebody,
+    id: req.body.id
+  }
+  var objid = req.body.id;
+  var objtitle = req.body.updatetitle;
+  var objbody = req.body.updatebody;
+  mongo.connect(url, function(err, db) {
+    db.collection('opinions').update( { _id: ObjectId(objid) }, {$set: {title: objtitle, body: objbody}}), function(err, upd) {
+      if (err) {
+        console.log('error!', err);
+        res.json( { status: 404} );
+      }
+      else {
+        // db.collection('data').find( { _id: ObjectId(objectId.id) } ).toArray(function(err, results) {
+        //   console.log('updated entry');
+        //   res.redirect(301, '/politics');
+        // })
+        db.close();
+      }
+    }
+        res.redirect(301, '/politics');
+  })
+console.log(objectId);
+// res.json(objectId);
 
+})
 
 // router.get('/politics.html', function(req, res) {
 //   res.redirect('/politics.html');
