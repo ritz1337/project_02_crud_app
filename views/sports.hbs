@@ -1,0 +1,98 @@
+<h1 class="center-align">Sports</h1>
+
+<div class="row">
+  <!-- Left side div (Opinions) -->
+  <div class="col s12 m8 l9">
+
+    {{#each items}}
+    <div class="card {{color}} {{_id}}">
+      <div class="card-content white-text">
+        <div class="opinion-controls">
+          <div class="opinion-edit">
+            <a class="waves-effect waves-light upd" href="#modal{{_id}}">
+              <i class="material-icons">create</i>
+            </a>
+
+            <!-- Modal Structure -->
+            <div id="modal{{_id}}" class="modal">
+              <div class="modal-content modalstyle">
+                <h4>Update Opinion</h4>
+                <form action="/opinion/sports/update" method="post">
+                  <div class="input-field">
+                    <input type="text" id="updatetitle" name="updatetitle" class="validate" required>
+                    <label for="updatetitle">Title</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" id="updatebody" name="updatebody" class="validate" required>
+                    <label for="updatebody">Body</label>
+                  </div>
+                  <div class="input-field hiddenid">
+                    <input type="hidden" id="id" name="id" value={{_id}}>
+                  </div>
+                  <button class="btn waves-effect waves-light modalbutton" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
+                </form>
+              </div>
+            </div>
+            {{!-- Replaced the below comments with a modal --}}
+            {{!-- <a class="waves-effect waves-light upd" href="#modal{{_id}}">
+              <i class="material-icons">create</i>
+            </a>
+
+            <!-- Modal Structure -->
+            <div id="modal{{_id}}" class="modal">
+              <div class="modal-content">
+                <h4>Modal Header</h4>
+                <p>A bunch of text</p>
+              </div>
+              <div class="modal-footer">
+                <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+              </div>
+            </div> --}}
+          </div>
+          <div class="opinion-delete">
+            <div class="removebutton">
+              <i class="material-icons">delete</i>
+            </div>
+          </div>
+        </div>
+        <span class="card-title">{{title}}</span>
+        <p>{{body}}</p>
+      </div>
+      <div class="username">
+        <p><span class="userplace">user:</span> {{user}}</p>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+
+    <!-- Ride side div (Input box) -->
+      <div class="col s12 m4 l3">
+        <div class="toc-wrapper pinned" style="top: 190px;">
+          <form action="/opinion/sports" method="post">
+            <div class="input-field">
+              <input disabled value="Sports" type="text" id="sports" name="sports" class="validate">
+              <label for="sports">Category</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="title" name="title" class="validate" required>
+              <label for="title">Title</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="body" name="body" class="validate" required>
+              <label for="body">Body</label>
+            </div>
+            <div class="input-field">
+              <input type="text" id="user" name="user" class="validate" required>
+              <label for="user">Your Name</label>
+            </div>
+            <button class="btn waves-effect waves-light modalbutton" type="submit" name="action">Submit
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+  </div>
+
