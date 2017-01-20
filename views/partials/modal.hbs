@@ -40,7 +40,7 @@
 
             <!-- Modal Structure -->
             <div id="modal{{_id}}" class="modal">
-              <div class="modal-content">
+              <div class="modal-content modalstyle">
                 <h4>Update Opinion</h4>
                 <form action="/opinion/politics/update" method="post">
                   <div class="input-field">
@@ -54,7 +54,9 @@
                   <div class="input-field hiddenid">
                     <input type="hidden" id="id" name="id" value={{_id}}>
                   </div>
-                  <button type="submit">UPDATE</button>
+                  <button class="btn waves-effect waves-light modalbutton" type="submit" name="action">Submit
+                    <i class="material-icons right">send</i>
+                  </button>
                 </form>
               </div>
             </div>

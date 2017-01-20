@@ -42,3 +42,70 @@
 .toc-wrapper {
   width: 200px;
 }
+
+.modalstyle {
+  background-color: #7986cb ;
+}
+
+.modalstyle label {
+  color: white;
+}
+
+.modalstyle button {
+  background-color: #9376CB;
+}
+
+.modalstyle button:hover {
+  background-color: #573698;
+}
+
+.brand-logo {
+  padding-left: 25px !important;
+}
+
+.nav-wrapper {
+  background-color: #7986cb;
+}
+
+.dropdown-button {
+  background-color: #9376CB;
+  padding-left: 25px;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #9376CB;
+}
+
+/*h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  color: #B8A2E3;
+}*/
+
+body {
+  background-color: #EADFFF;
+}
+
+/*.categories.card-title {
+  font-weight: bold;
+}
+*/
+
+
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+.page-footer {
+    background-color: #7986cb !important;
+}
+
+

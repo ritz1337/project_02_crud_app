@@ -18,7 +18,7 @@ var randomColorPicker = function (items) {
 }
 
 router.get('/', function(req, res, next) {
-  res.render('index', {title: 'TEST PAGE PLZ WORK'});
+  res.render('index', {title: 'VocalKords'});
 })
 
 // test insert document on navigation to /insert

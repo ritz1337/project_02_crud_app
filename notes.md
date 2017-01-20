@@ -8,6 +8,9 @@ an html div
 
 2) Couldn't get materialize modal to work for new opinion input - just refused to pop up, hence bad data entry field.
 
+3) Colors:
+Blue: #7986cb
+Purple: #9376CB
 
 
 MongoDB Schema:
