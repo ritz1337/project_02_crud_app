@@ -40,7 +40,12 @@ The idea was to implement a combination of CSS Frameworks, Render Engines, AJAX 
 ### Installation Instructions:
 1) Navigate to: https://lit-shelf-53913.herokuapp.com/
 
-### Unsolved Problems/Planned Features:
+### Unsolved Problems:
+-If no opinions on a category page, input form spills into footer
+-On mobile, input form overlaps opinion cards
+-The Update Modal should have the existing Title and Body pre-filled in
+
+### Planned Features:
 1) Enable more categories
 2) User login & authentication
 3) Allow users to comment on existing opinions, creating a dialog chain
