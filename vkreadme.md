@@ -51,3 +51,9 @@ The idea was to implement a combination of CSS Frameworks, Render Engines, AJAX 
 3) Allow users to comment on existing opinions, creating a dialog chain
 4) Display most recent Opinions first
 5) Allow users to upvote & downvote on opinions
+
+### Wireframes
+https://github.com/ritz1337/project_02_crud_app/blob/master/VocalKords%20Wireframes.pdf
+
+### User Stories
+https://github.com/ritz1337/project_02_crud_app/blob/master/userjourneys/Project%202%20VocalKords.docx
