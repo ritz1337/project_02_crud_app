@@ -9,10 +9,9 @@ Whether it's constructive or destructive, vehement or apathetic, cordial or accu
 ### Technologies Used:
 
 1. HTML5
-* CSS3
+2. CSS3
  * Materialize
-
-* JavaScript
+3. JavaScript
  * Node.js
  * Express.js
  * Express Modules:
@@ -21,9 +20,8 @@ Whether it's constructive or destructive, vehement or apathetic, cordial or accu
  * Serve-Favicon
  * jQuery
  * AJAX
-
-*MongoDB
-*Handlebars
+4. MongoDB
+5. Handlebars
 
 ### Approach:
 
