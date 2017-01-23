@@ -9,19 +9,18 @@ Whether it's constructive or destructive, vehement or apathetic, cordial or accu
 ### Technologies Used:
 
 1. HTML5
+* CSS3
+ * Materialize
 
-*CSS3
- *Materialize
-
-*JavaScript
- *Node.js
- *Express.js
- *Express Modules:
- *Morgan
- *Body-Parser
- *Serve-Favicon
- *jQuery
- *AJAX
+* JavaScript
+ * Node.js
+ * Express.js
+ * Express Modules:
+ * Morgan
+ * Body-Parser
+ * Serve-Favicon
+ * jQuery
+ * AJAX
 
 *MongoDB
 *Handlebars
